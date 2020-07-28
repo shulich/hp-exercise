@@ -1,0 +1,25 @@
+<div class="container">
+  <!--  -->
+  <header>
+    <div class="logo">
+      <div class="logo-img">
+        <img src="assets/icons/hplogo.svg" alt="angular" />
+      </div>
+      <div class="logo-text">
+        <span>HP Indigo</span>
+        <span class="bold">Service Portal</span>
+      </div>
+    </div>
+    <div class="menu" (click)="showMenu()">
+      <span>Menu</span>
+    </div>
+  </header>
+  <main>
+    <div class="menu-wrapper" [ngClass]="{'show': isShowMenu}">
+      <app-menu-list [items$]="menueItems$"></app-menu-list>
+    </div>
+    <div class="content">
+      <router-outlet></router-outlet>
+    </div>
+  </main>
+</div>
