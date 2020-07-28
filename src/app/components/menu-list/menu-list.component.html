@@ -6,7 +6,7 @@
     <li *ngFor="let item of items$ | async" [ngClass]="{'select':item.isSelect}" 
     [routerLink]="item.link" (click)="selectItem(item)">
       <span>{{item.name}}</span>
-      <img src="assets/arrow-icon.png" />
+       <img src="assets/icons/arrow.png" />
     </li>
   </ul>
 </div>
