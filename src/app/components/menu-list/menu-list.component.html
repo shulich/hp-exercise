@@ -1,0 +1,12 @@
+<div class="wrapper">
+  <div class="title">
+    <h2>Welcome</h2>
+  </div>
+  <ul>
+    <li *ngFor="let item of items$ | async" [routerLinkActive]="['select']"
+    [routerLink]="item.link" (click)="menuservice.showMenu(false)">
+      <span>{{item.name}}</span>
+      <img src="assets/icons/arrow.png" />
+    </li>
+  </ul>
+</div>
