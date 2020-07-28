@@ -1,0 +1,8 @@
+ [
+    { "id" : "1", "name":"chart","link" : "chart"},
+    { "id" : "2", "name":"home","link" : "home"},
+    { "id" : "3", "name":"instelation","link" : "instelation"},
+    { "id" : "4", "name":"menu3","link" : "menu3"},
+    { "id" : "5", "name":"menu4","link" : "menu4"}
+  ]
+
