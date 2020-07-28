@@ -17,7 +17,7 @@ export class MenuService {
   constructor(private http: HttpClient) { }
 
   public getMenuItems(): Observable<MenuItem[]> {
-    return this.http.get(this._jsonURL) as Observable<MenuItem[]>;
+      return this.http.get<MenuItem[]>(this._jsonURL);
   }
 
   showMenu(isShow: boolean){
