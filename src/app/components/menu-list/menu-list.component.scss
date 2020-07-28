@@ -13,23 +13,24 @@
    }
 
    ul{
+        width: 100%;
+        padding: 0;
+        margin: 0;
+       
        li{
            background-color: white;
-           border: 1px solid gray;
+           border: 1px solid #f1f2f6;
            display: flex;
            justify-content: space-between;
            height: 40px;
            text-align: center;
            padding: 0.7em;
-           &.select, &:hover {
-              background-color:#1976d2;
-        }
+                &.select, &:hover {
+                    background-color:#1976d2;
+               }
            img{
                height: 12px;
            }
-       }
-       width: 100%;
-       padding: 0;
-       margin: 0;
+      }
    }
 }
