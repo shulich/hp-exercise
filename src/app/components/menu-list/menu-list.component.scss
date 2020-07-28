@@ -27,6 +27,9 @@
            padding: 0.7em;
                 &.select, &:hover {
                     background-color:#1976d2;
+                    span{
+                        color: white;
+                    }
                }
            img{
                height: 12px;
