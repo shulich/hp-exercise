@@ -12,8 +12,7 @@ const routes: Routes = [
   { path: "menu3", component: Menu3Component },
   { path: "menu4", component: Menu4Component },
   { path: "chart" , component: ChartComponent },
-  { path: "" , component: ChartComponent },
-
+  { path: "", pathMatch: "full", redirectTo: "chart" }
 ];
 
 @NgModule({
